@@ -18,7 +18,7 @@
   <body>
     <header>
       <nav id="navbar">
-        <div class="container">
+        <div id="logo-container" class="container">
           <h1 class="logo"><a href="/index.html"> HBT</a></h1>
           <ul>
             <li><a class="current" href="/index.html">Home</a></li>
@@ -62,9 +62,9 @@
     </section>
     <section id="home-info" class="bg-dark">
       <div class="info-img"></div>
-      <div class="info-content">
+      <div id=" text-info" class="info-content">
         <h2><span class="text-primary">The History </span>Of Our Hotel</h2>
-        <p>
+        <p id="history">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti,
           natus? Obcaecati totam reprehenderit velit excepturi quam repudiandae,
           voluptates cupiditate. Aperiam vitae a iure recusandae illo ipsum
@@ -75,5 +75,73 @@
         <a href="/about.html" class="btn-light">Read More </a>
       </div>
     </section>
+    <section id="features">
+      <div class="feature bg-light">
+        <div class="container-plus">
+          <svg
+            class="hotel"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 32 32"
+          >
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M21.15 5.02h6.69c.998 0 1.826.776 2.078 1.826c.067.284.077.522-.094.775a.893.893 0 0 1-.744.399H29V30H3V8.02h-.1a.895.895 0 0 1-.755-.416c-.17-.264-.148-.52-.075-.812c.253-1.023 1.07-1.772 2.05-1.772h6.69A5.95 5.95 0 0 1 15.98 2a5.95 5.95 0 0 1 5.17 3.02ZM10 29.62c0-.34.28-.62.621-.62H11V8.02h-1v21.6ZM21.379 29H21V8.02h1v21.6c0-.34-.28-.62-.621-.62ZM15.99 3h.005a5.473 5.473 0 0 0-.005 0ZM6 21.306v2.383c0 .17-.14.311-.32.311H4.31c-.17 0-.31-.14-.31-.31v-2.384c0-.17.14-.31.31-.31h1.38c.17 0 .31.14.31.31Zm3 0v2.383c0 .17-.14.311-.32.311H7.31c-.17 0-.31-.14-.31-.31v-2.384c0-.17.14-.31.31-.31h1.38c.17 0 .31.14.31.31Zm-3-5.008v2.384c0 .17-.14.31-.32.31H4.31c-.17 0-.31-.14-.31-.31v-2.384c0-.17.14-.31.31-.31h1.38c.17 0 .31.14.31.31Zm3 0v2.384c0 .17-.14.31-.32.31H7.31c-.17 0-.31-.14-.31-.31v-2.384c0-.17.14-.31.31-.31h1.38c.17 0 .31.14.31.31Zm-3-4.987v2.383c0 .17-.14.31-.32.31H4.31c-.17 0-.31-.14-.31-.31V11.31c0-.17.14-.31.31-.31h1.38c.17 0 .31.14.31.31Zm3 0v2.383c0 .17-.14.31-.32.31H7.31c-.17 0-.31-.14-.31-.31V11.31c0-.17.14-.31.31-.31h1.38c.17 0 .31.14.31.31Zm15.994 9.995v2.383c0 .17-.14.311-.31.311H23.31a.312.312 0 0 1-.311-.31v-2.384c0-.17.14-.31.31-.31h1.373c.17 0 .311.14.311.31Zm3.006 0v2.383c0 .17-.14.311-.31.311h-1.373a.312.312 0 0 1-.311-.31v-2.384c0-.17.14-.31.31-.31h1.373c.17 0 .311.14.311.31Zm-3.006-5.008v2.384c0 .17-.14.31-.31.31H23.31a.312.312 0 0 1-.311-.31v-2.384c0-.17.14-.31.31-.31h1.373c.17 0 .311.14.311.31Zm3.006 0v2.384c0 .17-.14.31-.31.31h-1.373a.312.312 0 0 1-.311-.31v-2.384c0-.17.14-.31.31-.31h1.373c.17 0 .311.14.311.31Zm-3.006-4.987v2.383c0 .17-.14.31-.31.31H23.31a.312.312 0 0 1-.311-.31V11.31c0-.17.14-.31.31-.31h1.373c.17 0 .311.14.311.31Zm3.006 0v2.383c0 .17-.14.31-.31.31h-1.373a.312.312 0 0 1-.311-.31V11.31c0-.17.14-.31.31-.31h1.373c.17 0 .311.14.311.31ZM15 13.31v2.38c0 .17-.14.31-.312.31h-1.376a.312.312 0 0 1-.312-.31v-2.38c0-.17.14-.31.312-.31h1.376c.171 0 .312.14.312.31ZM15.137 27h-1.774a.365.365 0 0 1-.363-.37v-4.628h2.5v4.629c0 .21-.167.369-.363.369Zm1.363-5.998V21h-1v.002H13V21h-1.046a.45.45 0 0 1-.454-.45c0-.08.03-.15.06-.21c.006-.006.009-.008.01-.011v-.009a5.155 5.155 0 0 1 4.44-2.53a5.155 5.155 0 0 1 4.44 2.53c.005.005.005.012.005.02s0 .015.005.02c.03.05.04.12.04.19a.45.45 0 0 1-.454.45H19v.002h-2.5Zm0 1v4.629c0 .21.167.369.363.369h1.774c.196 0 .363-.16.363-.37v-4.628h-2.5ZM19 15.69v-2.38c0-.17-.14-.31-.312-.31h-1.376a.313.313 0 0 0-.312.31v2.38c0 .17.14.31.312.31h1.376c.171 0 .312-.14.312-.31ZM17.511 6h-.02a.49.49 0 0 0-.488.49V8h-2.005V6.49a.49.49 0 0 0-.49-.49h-.02a.49.49 0 0 0-.488.49v4.02c0 .27.22.49.489.49h.02a.49.49 0 0 0 .489-.49v-1.5h2.005v1.5c0 .27.219.49.488.49h.02a.49.49 0 0 0 .489-.49V6.49a.49.49 0 0 0-.489-.49Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <h3>Great Location</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
+            nostrum!
+          </p>
+        </div>
+      </div>
+
+      <div class="feature bg-primary">
+        <div class="container-plus">
+          <svg
+            class="food"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill="currentColor"
+              d="M4 1.5a.5.5 0 0 0-1 0v3a2.5 2.5 0 0 0 2 2.45v7.55a.5.5 0 0 0 1 0V6.95A2.5 2.5 0 0 0 8 4.5v-3a.5.5 0 0 0-1 0v3a1.5 1.5 0 0 1-1 1.415V1.5a.5.5 0 0 0-1 0v4.415A1.5 1.5 0 0 1 4 4.5v-3Zm7 13V8H9.5a.5.5 0 0 1-.5-.5v-4c0-.663.326-1.283.771-1.729C10.217 1.326 10.837 1 11.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0Z"
+            />
+          </svg>
+          <h3>Free meals</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
+            nostrum!
+          </p>
+        </div>
+      </div>
+      <div class="feature bg-light">
+        <div class="container-plus">
+          <svg
+            class="fitness"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M20.57 14.86L22 13.43L20.57 12L17 15.57L8.43 7L12 3.43L10.57 2L9.14 3.43L7.71 2L5.57 4.14L4.14 2.71L2.71 4.14l1.43 1.43L2 7.71l1.43 1.43L2 10.57L3.43 12L7 8.43L15.57 17L12 20.57L13.43 22l1.43-1.43L16.29 22l2.14-2.14l1.43 1.43l1.43-1.43l-1.43-1.43L22 16.29l-1.43-1.43z"
+            />
+          </svg>
+          <h3>Fitness room</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
+            nostrum!
+          </p>
+        </div>
+      </div>
+    </section>
+    <fotter id="main-footer">
+      <p>Hotel BT &copy; 2022 All Rights Reserved</p>
+    </fotter>
   </body>
 </html>
