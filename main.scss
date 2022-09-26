@@ -135,20 +135,30 @@ p {
   background: rgb(213, 125, 84);
   color: #333;
 }
-.hotel {
-  width: 5em;
-  height: 5em;
-  margin-bottom: 10px;
-}
-.food {
-  width: 5em;
-  height: 5em;
-  margin-bottom: 10px;
-}
-.fitness {
-  width: 5em;
-  height: 5em;
-  margin-bottom: 10px;
+#features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit (250px, 1fr));
+  padding: 1em;
+  grid-gap: 1em;
+  .container-plus {
+    padding: 1em;
+    text-align: center;
+  }
+  .hotel {
+    // width: 1em;
+    // height: 1em;
+    margin-bottom: 10px;
+  }
+  .food {
+    // width: 1em;
+    // height: 1em;
+    margin-bottom: 10px;
+  }
+  .fitness {
+    // width: 1em;
+    // height: 1em;
+    margin-bottom: 10px;
+  }
 }
 
 #main-footer {
@@ -171,39 +181,11 @@ p {
   }
 }
 @media only screen and (max-width: 1300px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
   .close {
     display: none;
   }
   .menu {
     display: none;
-  }
-  #features {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(650px, 1fr));
-    gap: 0;
-    padding: 0;
-  }
-  .feature.bg-light {
-    width: 340px;
-    padding: 5em;
-    text-align: center;
-    overflow: auto;
-    position: absolute;
-  }
-  .feature.bg-primary {
-    width: 340px;
-    padding: 5em;
-    text-align: center;
-    overflow: auto;
-    position: absolute;
-  }
-  .container-plus {
-    position: relative;
   }
 }
 @media only screen and (max-width: 1600px) {
@@ -212,23 +194,5 @@ p {
   }
   .menu {
     display: none;
-  }
-
-  #features {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 0;
-    padding: 0;
-  }
-
-  .feature.bg-light {
-    width: 500px;
-    padding: 5em;
-    text-align: center;
-  }
-  .feature.bg-primary {
-    width: 500px;
-    padding: 5em;
-    text-align: center;
   }
 }
