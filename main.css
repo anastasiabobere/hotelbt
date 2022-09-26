@@ -165,7 +165,7 @@ p {
 
 #features {
   display: grid;
-  grid-template-columns: repeat(auto-fit 250px, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   padding: 1em;
   grid-gap: 1em;
 }
@@ -174,12 +174,18 @@ p {
   text-align: center;
 }
 #features .hotel {
+  width: 1em;
+  height: 1em;
   margin-bottom: 10px;
 }
 #features .food {
+  width: 1em;
+  height: 1em;
   margin-bottom: 10px;
 }
 #features .fitness {
+  width: 1em;
+  height: 1em;
   margin-bottom: 10px;
 }
 
