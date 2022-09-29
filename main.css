@@ -143,10 +143,6 @@ p {
   color: #fff;
 }
 
-#home-info .info-content p {
-  padding-bottom: 30px;
-}
-
 .bg-dark {
   background: #333;
   color: #fff;
@@ -196,15 +192,18 @@ p {
   width: 100%;
 }
 
-@media only screen and (min-width: 500px) {
-  #home-info .info-content p {
-    padding-bottom: 1px;
-  }
+@media only screen and (max-width: 500px) {
   .btn-light {
     margin-top: -1px;
   }
+  #home-info .info-content p {
+    display: none;
+  }
+  .btn-light {
+    top: 50px;
+  }
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (max-width: 700px) {
   .menu {
     width: 150px;
     height: 150px;
@@ -216,18 +215,33 @@ p {
     float: right;
   }
   #home-info .info-content p {
-    padding-bottom: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+  }
+  #home-info .info-content p:hover {
+    overflow: visible;
   }
   .btn-light {
     margin-top: 0;
   }
 }
-@media only screen and (min-width: 980px) {
+@media only screen and (max-width: 980px) {
   .close {
     display: none;
   }
   .menu {
     display: none;
+  }
+  #home-info .info-content p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+  }
+  #home-info .info-content p:hover {
+    overflow: visible;
   }
 }
 @media only screen and (min-width: 1100px) {
