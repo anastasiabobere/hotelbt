@@ -10,6 +10,21 @@ a {
   text-decoration: none;
   color: rgb(42, 42, 42);
 }
+.clr {
+  clear: both;
+}
+.l-heading {
+  font-size: 40px;
+}
+.py-1 {
+  padding: 10px 0;
+}
+.py-2 {
+  padding: 20px 0;
+}
+.py-3 {
+  padding: 30px 0;
+}
 h1,
 h2,
 h3 {
@@ -157,7 +172,46 @@ p {
     margin-bottom: 10px;
   }
 }
+#about-info .info-right {
+  float: right;
+  width: 50%;
+  min-height: 100%;
+}
+#about-info .info-right img {
+  display: block;
+  margin: auto;
+  width: 70%;
+  border-radius: 50%;
+}
 
+#about-info .info-left {
+  width: 50%;
+  float: left;
+  min-height: 100%;
+}
+
+#testimonials {
+  height: 600px;
+  background: url("/image_resources/test-bg.jpg") no-repeat center center/cover;
+  padding-top: 100px;
+}
+#testimonials .testimonials img {
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  float: left;
+}
+#testimonials h2 {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 40px;
+}
+#testimonials .testimonials {
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  opacity: 0.9;
+}
 #main-footer {
   background: #444;
   color: #fff;
@@ -188,6 +242,15 @@ p {
     height: 15px;
     float: right;
   }
+  #about-info .info-right img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+  }
+  #about-info .info-left .p-2 {
+    width: 400px;
+  }
+
   #home-info .info-content p {
     white-space: nowrap;
     overflow: hidden;
