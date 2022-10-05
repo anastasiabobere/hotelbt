@@ -74,6 +74,8 @@ p {
 #showcase {
   background: url("/image_resources/showcase.jpg") no-repeat center center/cover;
   height: 600px;
+  animation: introLoad 2s forwards;
+  position: relative;
 }
 .hero {
   padding-top: 170px;
@@ -83,6 +85,14 @@ p {
 #showcase h1 {
   font-size: 60px;
   line-height: 1.2em;
+}
+@keyframes introLoad {
+  from {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
 }
 .text-primary {
   color: rgb(213, 125, 84);
@@ -167,6 +177,31 @@ p {
     margin-bottom: 10px;
   }
   .fitness {
+    width: 4em;
+    height: 4em;
+    margin-bottom: 10px;
+  }
+}
+#contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  padding: 0.5em;
+  grid-gap: 1em;
+  .container {
+    padding: 1em;
+    text-align: center;
+  }
+  .hotel-btn {
+    width: 4em;
+    height: 4em;
+    margin-bottom: 10px;
+  }
+  .phone-btn {
+    width: 4em;
+    height: 4em;
+    margin-bottom: 10px;
+  }
+  .email-btn {
     width: 4em;
     height: 4em;
     margin-bottom: 10px;
@@ -297,22 +332,18 @@ p {
 }
 @media only screen and (max-width: 980px) {
   .close {
-    display: none;
+    width: 100px;
+    height: 100px;
   }
   .menu {
-    display: none;
+    width: 100px;
+    height: 100px;
   }
   #home-info .info-content #small-text {
     display: none;
   }
 }
-@media only screen and (min-width: 1100px) {
-  .close {
-    display: none;
-  }
-  .menu {
-    display: none;
-  }
+@media only screen and (min-width: 1000px) {
   #home-info .info-content p {
     padding-bottom: 9px;
   }
@@ -320,6 +351,12 @@ p {
     margin-top: 20px;
   }
   #home-info .info-content #small-text {
+    display: none;
+  }
+  .close {
+    display: none;
+  }
+  .menu {
     display: none;
   }
 }

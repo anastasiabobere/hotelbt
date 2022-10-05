@@ -92,6 +92,9 @@ p {
 #showcase {
   background: url("/image_resources/showcase.jpg") no-repeat center center/cover;
   height: 600px;
+  -webkit-animation: introLoad 2s forwards;
+          animation: introLoad 2s forwards;
+  position: relative;
 }
 
 .hero {
@@ -105,6 +108,27 @@ p {
   line-height: 1.2em;
 }
 
+@-webkit-keyframes introLoad {
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes introLoad {
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
 .text-primary {
   color: rgb(213, 125, 84);
 }
@@ -199,6 +223,32 @@ p {
   margin-bottom: 10px;
 }
 #features .fitness {
+  width: 4em;
+  height: 4em;
+  margin-bottom: 10px;
+}
+
+#contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  padding: 0.5em;
+  grid-gap: 1em;
+}
+#contact-info .container {
+  padding: 1em;
+  text-align: center;
+}
+#contact-info .hotel-btn {
+  width: 4em;
+  height: 4em;
+  margin-bottom: 10px;
+}
+#contact-info .phone-btn {
+  width: 4em;
+  height: 4em;
+  margin-bottom: 10px;
+}
+#contact-info .email-btn {
   width: 4em;
   height: 4em;
   margin-bottom: 10px;
@@ -333,22 +383,18 @@ p {
 }
 @media only screen and (max-width: 980px) {
   .close {
-    display: none;
+    width: 100px;
+    height: 100px;
   }
   .menu {
-    display: none;
+    width: 100px;
+    height: 100px;
   }
   #home-info .info-content #small-text {
     display: none;
   }
 }
-@media only screen and (min-width: 1100px) {
-  .close {
-    display: none;
-  }
-  .menu {
-    display: none;
-  }
+@media only screen and (min-width: 1000px) {
   #home-info .info-content p {
     padding-bottom: 9px;
   }
@@ -356,6 +402,12 @@ p {
     margin-top: 20px;
   }
   #home-info .info-content #small-text {
+    display: none;
+  }
+  .close {
+    display: none;
+  }
+  .menu {
     display: none;
   }
 }/*# sourceMappingURL=main.css.map */
