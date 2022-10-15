@@ -301,6 +301,7 @@ p {
   text-align: center;
   display: inline-block;
   width: 100%;
+  z-index: 999;
 }
 
 .menu {
@@ -331,25 +332,25 @@ p {
     position: fixed;
   }
 }
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 970px) {
   #testimonials .testimonials {
     overflow: hidden;
   }
+  h1 {
+    color: white;
+    width: 50%;
+  }
   .nav-list {
+    background: white;
+    z-index: 999;
+    height: 100vh;
     position: fixed;
-  }
-  #navbar ul {
-    list-style: none;
-    float: right;
-    margin: 0;
-  }
-  #navbar ul li {
-    float: left;
-  }
-  #navbar ul li a {
-    padding: 30px;
-    display: block;
-    text-align: center;
+    right: 0;
+    top: 0;
+    width: 50%;
+    text-transform: uppercase;
+    transform: translateX(100%);
+    transition: transform 5s ease-in-out;
   }
   #home-info .info-content #small-text {
     color: white;
@@ -371,9 +372,47 @@ p {
     margin-top: 0;
   }
 }
-@media only screen and (max-width: 980px) {
+@media only screen and (min-width: 980px) {
   #home-info .info-content #small-text {
     display: none;
+  }
+  .close {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  #navbar {
+    background: #333;
+    overflow: auto;
+  }
+  #navbar a {
+    color: #fff;
+    display: block;
+    max-width: 1000px;
+  }
+  #navbar h1 {
+    float: left;
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  #navbar ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+  }
+  #navbar ul li {
+    float: left;
+  }
+  #navbar ul li a {
+    padding: 30px;
+    display: block;
+    text-align: center;
+  }
+  #navbar ul li a:hover,
+#navbar ul li a.current {
+    background: rgb(90, 90, 90);
+    color: rgb(213, 125, 84);
   }
 }
 @media only screen and (min-width: 1000px) {
