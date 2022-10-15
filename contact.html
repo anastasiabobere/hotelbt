@@ -20,36 +20,37 @@
       <nav id="navbar">
         <div id="logo-container" class="container">
           <h1 class="logo"><a href="/index.html"> HBT</a></h1>
-          <ul>
+          <ul class="nav-list">
             <li><a href="/index.html">Home</a></li>
             <li><a href="/about.html">About</a></li>
             <li><a class="current" href="/contact.html">Contact</a></li>
           </ul>
+          <svg
+            class="close"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M15.59 7L12 10.59L8.41 7L7 8.41L10.59 12L7 15.59L8.41 17L12 13.41L15.59 17L17 15.59L13.41 12L17 8.41L15.59 7Z"
+            />
+          </svg>
+          <svg
+            class="menu"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 20 20"
+          >
+            <path
+              fill="currentColor"
+              d="M16.4 9H3.6c-.552 0-.6.447-.6 1c0 .553.048 1 .6 1h12.8c.552 0 .6-.447.6-1c0-.553-.048-1-.6-1zm0 4H3.6c-.552 0-.6.447-.6 1c0 .553.048 1 .6 1h12.8c.552 0 .6-.447.6-1c0-.553-.048-1-.6-1zM3.6 7h12.8c.552 0 .6-.447.6-1c0-.553-.048-1-.6-1H3.6c-.552 0-.6.447-.6 1c0 .553.048 1 .6 1z"
+            />
+          </svg>
         </div>
       </nav>
-      <svg
-        class="close"
-        xmlns="http://www.w3.org/2000/svg"
-        preserveAspectRatio="xMidYMid meet"
-        viewBox="0 0 24 24"
-      >
-        <path
-          fill="currentColor"
-          d="M15.59 7L12 10.59L8.41 7L7 8.41L10.59 12L7 15.59L8.41 17L12 13.41L15.59 17L17 15.59L13.41 12L17 8.41L15.59 7Z"
-        />
-      </svg>
-      <svg
-        class="menu"
-        xmlns="http://www.w3.org/2000/svg"
-        preserveAspectRatio="xMidYMid meet"
-        viewBox="0 0 20 20"
-      >
-        <path
-          fill="currentColor"
-          d="M16.4 9H3.6c-.552 0-.6.447-.6 1c0 .553.048 1 .6 1h12.8c.552 0 .6-.447.6-1c0-.553-.048-1-.6-1zm0 4H3.6c-.552 0-.6.447-.6 1c0 .553.048 1 .6 1h12.8c.552 0 .6-.447.6-1c0-.553-.048-1-.6-1zM3.6 7h12.8c.552 0 .6-.447.6-1c0-.553-.048-1-.6-1H3.6c-.552 0-.6.447-.6 1c0 .553.048 1 .6 1z"
-        />
-      </svg>
     </header>
+
     <section id="contact-form" class="py-3">
       <div class="container">
         <h1 class="l-heading"><span class="text-primary">Contact</span> Us</h1>
@@ -129,5 +130,17 @@
     <footter id="main-footer">
       <p>Hotel BT &copy; 2022 All Rights Reserved</p>
     </footter>
+    <script>
+      const menu = document.querySelector(".menu");
+      const close = document.querySelector(".close");
+      const nav = document.querySelector("nav");
+      menu.addEventListener("click", () => {
+        nav.classList.add("open-nav");
+      });
+
+      close.addEventListener("click", () => {
+        nav.classList.remove("open-nav");
+      });
+    </script>
   </body>
 </html>

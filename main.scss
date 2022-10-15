@@ -43,6 +43,7 @@ p {
 #navbar {
   background: #333;
   overflow: auto;
+  position: relative;
 }
 
 #showcase {
@@ -157,11 +158,11 @@ p {
   }
 }
 #contact-info {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  padding: 0.5em;
-  grid-gap: 1em;
   .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    padding: 0.5em;
+    grid-gap: 1em;
     padding: 1em;
     text-align: center;
   }
@@ -200,7 +201,6 @@ p {
 }
 
 #testimonials {
-  height: 600px;
   background: url("/image_resources/test-bg.jpg") no-repeat center center/cover;
   padding-top: 100px;
   display: grid;
@@ -254,17 +254,36 @@ p {
   width: 100%;
   z-index: 999;
 }
-.menu {
-  width: 3em;
-  height: 3em;
-  float: top;
-  cursor: pointer;
-}
+.menu,
 .close {
   width: 3em;
   height: 3em;
-  float: top;
+  top: 0;
+  right: 0;
   cursor: pointer;
+  position: absolute;
+}
+.menu {
+  color: white;
+}
+.close {
+  // float: top;
+  display: none;
+  color: black;
+}
+.nav-list {
+  list-style-type: none;
+
+  // transform: translateX(100%);
+}
+.open-nav .nav-list {
+  transform: translateX(0);
+}
+.open-nav .close {
+  // right: 190px;
+  right: 0;
+  z-index: 999;
+  display: block;
 }
 @media only screen and (max-width: 500px) {
   #home-info .info-content p {
@@ -285,7 +304,7 @@ p {
   #testimonials .testimonials {
     overflow: hidden;
   }
-  h1 {
+  h1 a {
     color: white;
     width: 50%;
   }
@@ -297,9 +316,11 @@ p {
     right: 0;
     top: 0;
     width: 50%;
+    padding-left: 10px;
+    padding-top: 20px;
     text-transform: uppercase;
     transform: translateX(100%);
-    transition: transform 5s ease-in-out;
+    // transition: transform 5s ease-in-out;
   }
   #home-info .info-content #small-text {
     color: white;
