@@ -47,7 +47,7 @@ p {
 }
 
 #showcase {
-  background: url("/image_resources/showcase.jpg") no-repeat center center/cover;
+  background: url("image_resources/showcase.jpg") no-repeat center center/cover;
   height: 600px;
   animation: introLoad 2s forwards;
   position: relative;
@@ -111,7 +111,7 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 #home-info .info-img {
-  background: url("/image_resources/photo-1.jpg");
+  background: url("image_resources/photo-1.jpg");
 }
 #home-info .info-content {
   text-align: center;
@@ -201,7 +201,7 @@ p {
 }
 
 #testimonials {
-  background: url("/image_resources/test-bg.jpg") no-repeat center center/cover;
+  background: url("image_resources/test-bg.jpg") no-repeat center center/cover;
   padding-top: 100px;
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
